@@ -1,0 +1,31 @@
+{
+  "name": "omp-agent-council",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": "./index.ts",
+  "files": [
+    "index.ts",
+    "skills",
+    "src",
+    "templates"
+  ],
+  "omp": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@oh-my-pi/pi-coding-agent": ">=18.6.1"
+  },
+  "devDependencies": {
+    "@oh-my-pi/pi-coding-agent": "^18.8.4",
+    "@types/bun": "^1.3.5",
+    "typescript": "^5.9.3"
+  }
+}
